@@ -12,8 +12,12 @@ public class RockPaperScissor {
                (input1.equals("scissor") && input2.equals("paper")) ||
                (input1.equals("rock") && input2.equals("scissor"))){
                return "Player 1 wins";
-            } else {
+	    } else if ((input1.equals("paper") && input2.equals("paper")) ||
+               (input1.equals("scissor") && input2.equals("scissor")) ||
+               (input1.equals("rock") && input2.equals("rock"))){
                return "TIE";
+            } else {
+               return "INVALID input";
             }
     }
 }
