@@ -1,0 +1,57 @@
+
+a	java:S112û"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿ
+O
+java:S1118":Add a private constructor to hide the implicit public one.(ŒÅüg
+>
+java:S1172"(Remove this unused method parameter "k".(óõı«
+S	java:S106"9Replace this use of System.out or System.err by a logger.(®—Óÿÿÿÿÿ
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(İÛ¢¿øÿÿÿÿ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106'"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S106."9Replace this use of System.out or System.err by a logger.(¨»è
+S	java:S106/"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(×ü¸‘
+N	java:S1068"9Replace this use of System.out or System.err by a logger.(åğÇ
+S	java:S106;"9Replace this use of System.out or System.err by a logger.(İÛ¢¿øÿÿÿÿ
+S	java:S106?"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+m
+java:S3776F"RRefactor this method to reduce its Cognitive Complexity from 72 to the 15 allowed.(¾‹ˆÁøÿÿÿÿ
+S	java:S106e"9Replace this use of System.out or System.err by a logger.(ö‘­üÿÿÿÿ
+S	java:S106t"9Replace this use of System.out or System.err by a logger.(ä¢şæüÿÿÿÿ
+O	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(¿ì†
+O	java:S106’"9Replace this use of System.out or System.err by a logger.(•µÌº
+O	java:S106¡"9Replace this use of System.out or System.err by a logger.(²ùğÛ
+O	java:S106°"9Replace this use of System.out or System.err by a logger.(ú°üË
+T	java:S106À"9Replace this use of System.out or System.err by a logger.(åúúäøÿÿÿÿ
+O	java:S106Ï"9Replace this use of System.out or System.err by a logger.(üê€
+ƒ
+java:S1130Ü"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(œû¿Ø
+W	java:S125İ"<This block of commented-out lines of code should be removed.(•éö•úÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(®ıáëûÿÿÿÿ
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(âî©
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(èÛò§
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ë¼Èí
+i
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(íĞ¢6
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(Üş’¿
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(£‘¬Ş
+o
+java:S1128
+"TRemove this unnecessary import: same package classes are always implicitly imported.(Æñ¿âşÿÿÿÿ
+b
+java:S1192å"FDefine a constant instead of duplicating this literal "\\s+$" 3 times.(îñ¸Ãùÿÿÿÿ
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óõı«
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óõı«
+l	java:S117í"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø¯†Ëıÿÿÿÿ
+g	java:S117ï"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à…àÀ
+0
+java:S1220""Move this file to a named package.
+a
+java:S2095ä"EUse try-with-resources or close this "Scanner" in a "finally" clause.(–¯ê›úÿÿÿÿ

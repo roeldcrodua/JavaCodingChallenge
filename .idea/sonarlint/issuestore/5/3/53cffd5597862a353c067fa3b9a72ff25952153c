@@ -1,0 +1,12 @@
+
+E
+java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ğÙø„ùÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†™ñ‹
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ö¸çêúÿÿÿÿ
+i
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¬›ãD
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(âî©
+0
+java:S1220""Move this file to a named package.

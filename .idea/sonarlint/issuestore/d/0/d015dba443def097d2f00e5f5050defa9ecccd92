@@ -1,0 +1,51 @@
+
+`	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ú‡î¯úÿÿÿÿ
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ÿÇÀ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(Ú‡î¯úÿÿÿÿ
+R
+java:S18549"<Remove this useless assignment to local variable "fileSize".(¹ç®»
+;
+java:S2129'" Remove this "String" constructor(ª·¼ôÿÿÿÿÿ
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(²ÛÌ¡üÿÿÿÿ
+B
+java:S1125,"'Remove the unnecessary boolean literal.(²ÛÌ¡üÿÿÿÿ
+B
+java:S1125-"'Remove the unnecessary boolean literal.(ıË•ûÿÿÿÿ
+B
+java:S11250"'Remove the unnecessary boolean literal.(ıË•ûÿÿÿÿ
+V	java:S1253"<This block of commented-out lines of code should be removed.(€ãÿÿÿÿÿ
+N	java:S1065"9Replace this use of System.out or System.err by a logger.(û¢÷¡
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(ñ—¸½úÿÿÿÿ
+B
+java:S1125<"'Remove the unnecessary boolean literal.(ıË•ûÿÿÿÿ
+S	java:S106@"9Replace this use of System.out or System.err by a logger.(÷‹ÛŒøÿÿÿÿ
+S	java:S106B"9Replace this use of System.out or System.err by a logger.(¿œØ—şÿÿÿÿ
+V	java:S125C"<This block of commented-out lines of code should be removed.(Ù©Ù«ùÿÿÿÿ
+N	java:S106Y"9Replace this use of System.out or System.err by a logger.(Û¿ù¹
+N	java:S106\"9Replace this use of System.out or System.err by a logger.(©ç×Û
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ï´µ©
+i
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¬›ãD
+4
+java:S1128"Remove this duplicated import.(Æ™ş
+l
+java:S1104"VMake sourcePath a static final constant or non-public and provide accessors if needed.(ÿÇÀ
+o
+java:S1104"TMake location a static final constant or non-public and provide accessors if needed.(¹•ƒéÿÿÿÿÿ
+f
+java:S1104"PMake lock a static final constant or non-public and provide accessors if needed.(ÔåÃ
+F
+java:S1444"0Make this "public static sourcePath" field final(ÿÇÀ
+I
+java:S1444".Make this "public static location" field final(¹•ƒéÿÿÿÿÿ
+@
+java:S1444"*Make this "public static lock" field final(ÔåÃ
+0
+java:S1220""Move this file to a named package.
+h
+java:S2095("MUse try-with-resources or close this "DirectoryStream" in a "finally" clause.(Á³Š‘ÿÿÿÿÿ
+b
+java:S2095!"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(™ï“¤

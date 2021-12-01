@@ -1,0 +1,24 @@
+
+S	java:S106("9Replace this use of System.out or System.err by a logger.(…ËØ…üÿÿÿÿ
+Q
+java:S1854-";Remove this useless assignment to local variable "smaller".(ÄÉ¤‰
+M
+java:S18545"7Remove this useless assignment to local variable "big".(È¡Î”
+B
+java:S1481-",Remove this unused "smaller" local variable.(ÄÉ¤‰
+>
+java:S14810"(Remove this unused "big" local variable.(³Æ›ú
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(ˆÀäî
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Åúð†ýÿÿÿÿ
+o
+java:S2293-"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÄÉ¤‰
+0
+java:S1220""Move this file to a named package.
+K
+java:S1191"5Use classes from the Java API instead of Sun classes.(ˆÀäî
+=
+java:S21891""Add an end condition to this loop.(í¤‡Ìùÿÿÿÿ
+R
+java:S25891"7Remove this expression which always evaluates to "true"(í¤‡Ìùÿÿÿÿ

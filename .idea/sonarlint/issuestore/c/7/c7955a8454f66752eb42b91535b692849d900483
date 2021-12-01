@@ -1,0 +1,18 @@
+
+E
+java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ğÙø„ùÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(³İôE
+B
+java:S1481",Remove this unused "counter" local variable.(ŒÂëó
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(»÷¸ùûÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(­Ä«
+i
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¬›ãD
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(âî©
+f	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ßô¤
+0
+java:S1220""Move this file to a named package.
+`
+java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(òˆ„äùÿÿÿÿ

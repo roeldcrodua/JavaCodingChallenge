@@ -1,0 +1,21 @@
+
+Y
+java:S1854">Remove this useless assignment to local variable "operations".(»¬¼‰ùÿÿÿÿ
+P
+java:S1854"5Remove this useless assignment to local variable "n".(£ø‘ñúÿÿÿÿ
+E
+java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ
+A
+java:S1481"&Remove this unused "n" local variable.(£ø‘ñúÿÿÿÿ
+J
+java:S1481"/Remove this unused "operations" local variable.(»¬¼‰ùÿÿÿÿ
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(ÛÎïÁ
+S	java:S106$"9Replace this use of System.out or System.err by a logger.(ÀÒÚØüÿÿÿÿ
+i
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¬›ãD
+j
+java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(âî©
+0
+java:S1220""Move this file to a named package.
+[
+java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(ÎŒÌÍ

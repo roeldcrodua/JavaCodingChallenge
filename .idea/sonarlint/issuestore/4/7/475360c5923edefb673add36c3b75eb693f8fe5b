@@ -1,0 +1,15 @@
+
+Q	java:S125"<This block of commented-out lines of code should be removed.(”Ôâù
+f
+java:S62021"KReplace this usage of "Double.class.isInstance()" with "instanceof Double".(—Š¦¢şÿÿÿÿ
+Z
+java:S21855"?Remove this computation of % 1, which always evaluates to zero.(¤Ù©ÿÿÿÿÿ
+h
+java:S62026"MReplace this usage of "Integer.class.isInstance()" with "instanceof Integer".(ëıÓ˜øÿÿÿÿ
+S	java:S106K"9Replace this use of System.out or System.err by a logger.(‡¯±’ùÿÿÿÿ
+P
+java:S11412"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+[
+java:S2095&"EUse try-with-resources or close this "Scanner" in a "finally" clause.(ˆÇÚÅ
