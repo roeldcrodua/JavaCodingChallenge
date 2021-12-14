@@ -1,19 +1,0 @@
-
-t
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(¡şÏÖøÿÿÿÿ8şñå¢×/
-L
-java:S1197"*Move the array designators [] to the type.(¡şÏÖøÿÿÿÿ8€òå¢×/
-]	java:S125"<This block of commented-out lines of code should be removed.(ğÙø„ùÿÿÿÿ8…òå¢×/
-U	java:S106!"9Replace this use of System.out or System.err by a logger.(µ«Óï8†òå¢×/
-Z	java:S106#"9Replace this use of System.out or System.err by a logger.(™Ï”Ìşÿÿÿÿ8‡òå¢×/
-Z	java:S106'"9Replace this use of System.out or System.err by a logger.(„ñÜ¥üÿÿÿÿ8‡òå¢×/
-Z	java:S106)"9Replace this use of System.out or System.err by a logger.(Ÿäíûúÿÿÿÿ8ˆòå¢×/
-Z	java:S106-"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8ˆòå¢×/
-p
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(¬›ãD8‰òå¢×/
-q
-java:S1128"TRemove this unnecessary import: same package classes are always implicitly imported.(âî©8‰òå¢×/
-0
-java:S1220""Move this file to a named package.
-b
-java:S2095"EUse try-with-resources or close this "Scanner" in a "finally" clause.(ú—÷8£òå¢×/

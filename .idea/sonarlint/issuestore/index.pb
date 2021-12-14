@@ -1,8 +1,6 @@
 
 U
 %src/main/java/HtmlPageDownloader.java,5\e\5e00b55f042562de141d6aa94714553c9fc0b9e3
-L
-src/main/java/BoxFigure.java,6\2\62ab3562484fc6a86285ecfca464c18e78e5cef1
 V
 &src/main/java/CountDistinctLetter.java,c\7\c7955a8454f66752eb42b91535b692849d900483
 N
@@ -23,11 +21,3 @@ Q
 !src/main/java/OpenBrowserApp.java,d\0\d015dba443def097d2f00e5f5050defa9ecccd92
 R
 "src/main/java/PyramidTriangle.java,5\3\53cffd5597862a353c067fa3b9a72ff25952153c
-R
-"src/main/java/InputOutputSort.java,4\7\475360c5923edefb673add36c3b75eb693f8fe5b
-Q
-!src/main/java/SmallerInteger.java,b\2\b2c8905cd8d4fcc44a64cb6e788be9d3b790a72b
-M
-src/main/java/Palindrome.java,a\0\a0a114014667a4c17a880a01578b53a948c9b486
-K
-src/main/java/Piglatin.java,2\7\272a114be4dbc60f5f7c78625f19402ea7b5258a
