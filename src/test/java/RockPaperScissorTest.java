@@ -17,5 +17,6 @@ class RockPaperScissorTest {
         String actionResult = RockPaperScissor.rps("rock", "rock");
         //assert
         assertEquals(expectedResult, actionResult);
+
     }
 }
