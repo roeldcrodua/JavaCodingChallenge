@@ -29,6 +29,11 @@ public class LargestPrimeNumber {
     public static Integer getLargestPrime(Integer num){
         int max = getSortedNumbers(num);
         int output = 0;
+        if (num==2){
+            return 2;
+        } else if (num == 1) {
+            return -1;
+        }
         for (int i=max-1; i>0; i--) {
             int temp = 0;
             if (getSortedNumbers(i) == max) {
@@ -49,6 +54,10 @@ public class LargestPrimeNumber {
                 }
             }
         }
-        return output;
+        if (output>0){
+            return output;
+        } else {
+            return -1;
+        }
     }
 }

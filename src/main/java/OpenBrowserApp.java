@@ -17,8 +17,8 @@ import java.util.concurrent.TimeUnit;
 
 public class OpenBrowserApp {
 
-        public static String sourcePath = "C:\\Users\\Roel\\Documents\\ToDownload.txt";
-        public static String location = "G:\\MOVIES";
+        public static String sourcePath = "C:\\Users\\roeld\\Documents\\ToDownload.txt";
+        public static String location = "D:\\MOVIES";
         public static String lock = "*.crdownload";
 
 

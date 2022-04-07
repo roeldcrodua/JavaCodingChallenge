@@ -17,12 +17,12 @@ import java.math.*;
             // To debug: System.err.println("Debug messages...");
             for (int x = 1; x <= n; x++)
             {
-                System.out.println(n);
+
                 for (int y = 1; y < x; y++)
                 {
-                    System.out.print(n);
+                    System.out.print(" *");
                 }
-
+                System.out.println(" *");
             }
 
         }
