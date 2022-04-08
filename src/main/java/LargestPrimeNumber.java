@@ -34,16 +34,22 @@ public class LargestPrimeNumber {
         } else if (num == 1) {
             return -1;
         }
-        for (int i=max-1; i>0; i--) {
+        for (int i=max; i>0; i--) {
             int temp = 0;
             if (getSortedNumbers(i) == max) {
-                int last2Digit = Integer.parseInt(String.valueOf(i).substring(2));
+                int last2Digit =0;
+                if (i<100){
+                    last2Digit = i;
+                } else{
+                    last2Digit = Integer.parseInt(String.valueOf(i).substring(String.valueOf(i).length()-2));
+                }
+
                 for (int y=2; y<=max; y++){
                     if (i%y==0 && i!=y){
                         temp=0;
                         break;
                     } else {
-                        if (i%2==1 || last2Digit%i>0) {
+                        if (i%2==1 || last2Digit%y>0) {
                             temp = i;
                         }
                     }

@@ -57,38 +57,56 @@ public class ApplicationLog {
         int i = 0;
         while(sc.hasNextLine()){
             String read = sc.nextLine();
-            if (i==0) {
-                logCount = Integer.parseInt(read);
-            }else {
-                logs.add(read);
-                System.out.println(read);
-            }
+//            if (i==0) {
+//                logCount = Integer.parseInt(read);
+//            }else {
+//                logs.add(read);
+//                System.out.println(read);
+//            }
+            logs.add(read);
+
             i++;
             if (sc.nextLine() == null  || sc.nextLine().isEmpty()){
                 break;
             }
         }
-
         getUserConsecutivelyLoginDenied(logs, logCount);
     }
 
     public static void getUserConsecutivelyLoginDenied(List<String> logs, int logCount){
         List<String> filterLogs = new ArrayList<>();
         for (String log: logs){
-            if (log.contains("ERROR") && log.contains("SERVICE LOGIN-customer") && log.contains(" 020 ")){
+            if (log.contains("ERROR") && log.contains("SERVICE LOGIN-customer")){
                 filterLogs.add(log);
             }
         }
-        TreeMap<Integer, String> logMap = new TreeMap<>();
+        TreeMap<String, String> logMap = new TreeMap<>();
         for ( String l: filterLogs) {
             String[] details = l.substring(0,l.indexOf("@")).split(" ");
             Integer date = Integer.parseInt(details[0].substring(0,details[0].indexOf("|")).replace("-",""));
             String email = details[2];
-
-            logMap.put(date, email);
+            String key = email + date;
+            logMap.put(key, email);
         }
+        int counter =0 ;
+        int baseTime = 0;
+        Set<String> result = new HashSet<>();
         for (Map.Entry l:logMap.entrySet()){
-            System.out.println(l.getKey() + " " + l.getValue());
+
+            int date = Integer.parseInt(l.getKey().toString().substring(l.getKey().toString().length()-8));
+            if (date+1 == baseTime) {
+                counter++;
+            } else {
+                baseTime = date;
+                counter =0;
+            }
+            if (counter>=3){
+                result.add(l.getValue().toString());
+                counter =0;
+            }
+        }
+        for (String out: result){
+            System.out.println(out);
         }
     }
 }
