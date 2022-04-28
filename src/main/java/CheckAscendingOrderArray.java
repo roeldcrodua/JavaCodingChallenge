@@ -29,7 +29,13 @@ public class CheckAscendingOrderArray {
         checkAscendingOrder(number);
     }
 
-    public static void checkAscendingOrder(String input){
+    public static void checkAscendingOrder(String n){
+        String input = "";
+        if (n.matches("\\.")){
+            input = String.valueOf(Math.ceil(Double.parseDouble(n)));
+        } else {
+            input = n;
+        }
         List<String> numbers = Arrays.asList(input.split(","));
         int counter=0;
         int max =0;

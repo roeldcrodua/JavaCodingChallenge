@@ -4,6 +4,8 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.*;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 
@@ -26,6 +28,15 @@ public class OpenBrowserApp {
             downloadFile(sourcePath, location, lock);
         }
 
+        public static boolean checkIfLockFileExist() throws IOException {
+            List<String> lockFiles = new ArrayList<>();
+            DirectoryStream<Path> dirStream = Files.newDirectoryStream(Paths.get(location), lock);
+            for (Path p: dirStream){
+                lockFiles.add(p.toString());
+            }
+            return lockFiles.size() > 0;
+        }
+
         public static void downloadFile(String filePath, String location, String lock)  throws Exception {
             try {
                 File file = new File(filePath);                 //creates a new file instance
@@ -33,43 +44,58 @@ public class OpenBrowserApp {
                 BufferedReader br = new BufferedReader(fr);     //creates a buffering character input stream
                 Desktop desk = Desktop.getDesktop();
 
+                boolean running = false;
                 String line;
                 while((line = br.readLine()) != null)
                 {
-                    final String[] fileName = {new String()};
-                    DirectoryStream<Path> dirStream = Files.newDirectoryStream(Paths.get(location), lock);
-                    dirStream.forEach(path -> fileName[0] += path.toString());
-                    File lockFile = new File(fileName[0]);
-
-                    System.out.println(lockFile + (lockFile.exists() == true ?  " exist" : "Lockfile doesn't exist"));
-                    if (lockFile.exists()==false) {
+                    if (!running) {
+                        desk.browse(new URI(line));
+                        System.out.println(line);
+                        countDown(2);
+                    }
+                    if (!checkIfLockFileExist()) {
+                        System.out.println(line);
                         desk.browse(new URI(line));
                         countDown(1);
-                        if (lockFile.exists()==false){
-                            desk.browse(new URI(line));
+                        if (checkIfLockFileExist()) {
+                            running = true;
+                        } else {
+                            running = false;
                         }
-                        //TimeUnit.MINUTES.sleep(15);
-                        countDown(3);
-                        System.out.println("DOWNLOADING for 10 minutes...");
-                        System.out.println(line);
-                    } else {
-                        int counter = 0;
-                        Long fileSize = 0L;
-                        while (lockFile.exists()) {
-                            counter++;
-                            if (lockFile.exists()==false){
+                    }else {
+                        running = true;
+                        countDown(1);
+                    }
+
+                    int counter = 0;
+                    long fileSize = 0L;
+
+                    while (running){
+                        counter++;
+                        if (!checkIfLockFileExist()){
+                            System.out.println("Break");
+                            break;
+                        } else {
+                            String[] fileName = {new String()};
+                            DirectoryStream<Path> dirStream = Files.newDirectoryStream(Paths.get(location), lock);
+                            dirStream.forEach(path -> fileName[0] = path.toString());
+                            fileSize = Files.size(Paths.get(fileName[0]));
+                            System.out.println(fileName[0] + " --> " + fileSize);
+
+                            countDown(1);
+                            System.out.println("Loop " + counter + ": Countdown for 1 minute...");
+                            try {
+                                if (Files.size(Paths.get(fileName[0])) > fileSize) {
+                                    fileSize = Files.size(Paths.get(fileName[0]));
+                                    System.out.println(fileName[0] + " --> " + fileSize);
+                                    running = true;
+                                    countDown(1);
+                                    System.out.println("Loop " + counter + ": Countdown for 1 minute...");
+                                } else {
+                                    break;
+                                }
+                            } catch (NoSuchFileException ex){
                                 break;
-                            } else {
-                                fileSize = lockFile.length();
-                                System.out.println("FILESIZE: " + fileSize);
-                                countDown(1);
-                                System.out.println("Loop " + counter + ": Countdown for 1 minute...");
-//                            if (lockFile.length() > fileSize){
-//                                fileSize = lockFile.length();
-//                            } else {
-//                                System.out.println("Redownloading...");
-//                                desk.browse(new URI(line));
-//                            }
                             }
                         }
                     }

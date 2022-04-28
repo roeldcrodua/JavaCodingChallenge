@@ -41,7 +41,8 @@ public class LargestPrimeNumber {
                 if (i<100){
                     last2Digit = i;
                 } else{
-                    last2Digit = Integer.parseInt(String.valueOf(i).substring(String.valueOf(i).length()-2));
+
+                   last2Digit = Integer.parseInt(String.valueOf(i).substring(String.valueOf(i).length()-2));
                 }
 
                 for (int y=2; y<=max; y++){
